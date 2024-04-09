@@ -1,0 +1,39 @@
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+// Initialize the LCD object with the I2C address and dimensions
+LiquidCrystal_I2C lcd(0x27,20,4);
+void setup() {//starting of the setup() function
+  lcd.init();// Initialize the LCD
+  lcd.backlight();// Turns on the backlight
+}//end of the setup() fuction
+void loop() {//starting of the loop() fuction
+  lcd.setCursor(0,0);
+  lcd.print("Welcome to KSRIET");// Display "Welcome to KSRIET"
+  delay(1000);//Display the next notice after 1 second 
+  lcd.clear();//clears the lcd display
+  lcd.setCursor(0,0);
+  lcd.print("Hello Everyone");// Display "Hello Everyone"
+  delay(1000);//Display the next notice after 1 second
+  lcd.clear();//clears the lcd display
+  lcd.setCursor(0,0);
+  lcd.print("Welcome to dept  of IT ");//Display "Welcome to dept of IT"
+  delay(1000);//Display the next notice after 1 second
+  lcd.clear();//clears the lcd display
+  lcd.setCursor(0,0);
+  lcd.print("Tmrw will be a holiday"); //Display "Tmrw will be a holiday"
+  delay(1000);//Display the next notice after 1 second
+  lcd.clear();//clears the lcd display
+  lcd.setCursor(0,0);
+  lcd.print("This is an IOT Project");///Display "This is an IOT Project"
+  delay(1000);//Display the next notice after 1 second
+  lcd.clear();//clears the lcd display
+  lcd.setCursor(0,0);
+  lcd.print("Internet of Things");//Display "Internet of Things"
+  delay(1000);//Display the next notice after 1 second
+  lcd.clear();//clears the lcd display
+  lcd.setCursor(0,0);
+  lcd.print("Embedded Systems");//Display "Emdedded systems"
+  delay(1000);//Display the next notice after 1 second
+  lcd.clear();//clears the lcd display
+}//end of the loop() function
+
